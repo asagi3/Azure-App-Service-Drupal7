@@ -124,7 +124,7 @@ RUN drush init -y
 WORKDIR /var/www/html/
 
 ### Git clone Drupal code with personal access token ###
-RUN git clone -b master [REPLACE WITH YOUR GIT REPOSITORY CLONE URL] .
+RUN git clone -b master https://github.com/asagi3/test.git .
 # Add directories for public and private files
 RUN mkdir -p  /home/site/wwwroot/sites/default/files \
     && mkdir -p  /home/site/wwwroot/sites/default/files/private \
